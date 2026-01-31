@@ -26,4 +26,14 @@ To run this notebook, you need a Python environment with the following libraries
 
 ```bash
 pip install tensorflow matplotlib scikit-learn numpy
-Note: If you are using Google Colab, these libraries are pre-installed.🚀 How to RunOpen the file Handwritten_digit_classification.ipynb in Jupyter Notebook, Google Colab, or VS Code.Run the cells sequentially.The notebook will automatically download the MNIST dataset on the first run.🧠 Model ArchitectureThe model is a Sequential Artificial Neural Network (ANN) with the following structure:Layer TypeNodes / ShapeActivation FunctionDescriptionFlatten(28, 28) -> 784NoneFlattens 2D image to 1D vectorDense256ReLUHidden Layer 1Dense128ReLUHidden Layer 2Dense32ReLUHidden Layer 3Dense10SoftmaxOutput Layer (Probabilities for digits 0-9)Compilation Details:Optimizer: AdamLoss Function: Sparse Categorical CrossentropyMetrics: Accuracy📊 ResultsTraining Epochs: 50Validation Split: 20%Final Test Accuracy: ~98.15%The model demonstrates high accuracy in distinguishing between different handwritten digits using simple fully connected layers.📝 Example OutputThe notebook includes a prediction step where specific test images are fed into the model.Input Image: * Model Prediction: 2🤝 ContributingFeel free to fork this repository and experiment with Convolutional Neural Networks (CNNs) to see if you can improve the accuracy even further!
+Note: If you are using Google Colab, these libraries are pre-installed.
+🚀 How to Run
+Open the file Handwritten_digit_classification.ipynb in Jupyter Notebook, Google Colab, or VS Code.Run the cells sequentially.The notebook will automatically download the MNIST dataset on the first run.
+🧠 Model Architecture
+The model is a Sequential Artificial Neural Network (ANN) with the following structure:Layer TypeNodes / ShapeActivation FunctionDescriptionFlatten(28, 28) -> 784NoneFlattens 2D image to 1D vectorDense256ReLUHidden Layer 1Dense128ReLUHidden Layer 2Dense32ReLUHidden Layer 3Dense10SoftmaxOutput Layer (Probabilities for digits 0-9)Compilation Details:Optimizer: AdamLoss Function: Sparse Categorical CrossentropyMetrics: Accuracy
+📊 Results
+Training Epochs: 50Validation Split: 20%Final Test Accuracy: ~98.15%The model demonstrates high accuracy in distinguishing between different handwritten digits using simple fully connected layers.
+📝 Example Output
+The notebook includes a prediction step where specific test images are fed into the model.Input Image: * Model Prediction: 2
+🤝 Contributing
+Feel free to fork this repository and experiment with Convolutional Neural Networks (CNNs) to see if you can improve the accuracy even further!
